@@ -1,10 +1,10 @@
 <img src="https://i.ibb.co.com/7NrtB6Vv/image.png" />
 
-# Forkathon 2026: [Your Project Name] by [Your Team Name]
+# Forkathon 2026: [Your Project Name] by KUET_Titanium
 
 > Built for ForkedArch Freshers Hackathon 2026
 
-## 👥 Teama
+## 👥 Team
 
 | Name     | Roll     | Department | GitHub    |
 | -------- | -------- | ---------- | --------- |
