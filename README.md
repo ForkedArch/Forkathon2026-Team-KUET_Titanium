@@ -8,10 +8,9 @@
 
 | Name     | Roll     | Department | GitHub    |
 | -------- | -------- | ---------- | --------- |
-| Member 1 | 2K25XXXX | CSE        | @username |
-| Member 2 | 2K25XXXX | CSE        | @username |
-| Member 3 | 2K25XXXX | CSE        | @username |
-| Member 4 | 2K25XXXX | CSE        | @username |
+| Muhammad Tahmid Ahnaf | 52507086 | CSE        | @builtbyahnaf |
+| Mobasshira Sadia Sakal (Mira) | 52507041 | CSE        | @mira1423 |
+| Tahsin Hossain Chowdhury | 52507094 | CSE        | @tahsinlog2k25 |
 
 ---
 
