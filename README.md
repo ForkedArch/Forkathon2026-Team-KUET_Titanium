@@ -1,6 +1,6 @@
 <img src="https://i.ibb.co.com/7NrtB6Vv/image.png" />
 
-# Forkathon 2026: [Your Project Name] by KUET_Titanium
+# Forkathon 2026: KUET Kinship by KUET_Titanium
 
 > Built for ForkedArch Freshers Hackathon 2026
 
@@ -43,7 +43,7 @@ The information could relate to academic life, campus facilities, procedures, re
 Brainstorming twist:
 Your system should somehow deal with the fact that not all knowledge is equally reliable, current, or useful.
 
-### 🤔 [TEAM NAME]'s Understanding
+### 🤔 KUET_Titanium's Understanding
 
 Explain the problem in your own words. You may say a story mentioning your team member names!
 
