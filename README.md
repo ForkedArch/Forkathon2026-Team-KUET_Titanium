@@ -82,7 +82,7 @@ procedural questions dozens of times every single
 semester because students have nowhere else to
 check.
 
-#💡 **Why does it matter?**
+# 💡 **Why does it matter?**
 - **Wasted Energy:** Students spend critical time solving administrative riddles instead of building projects, studying,
 and innovating.
 - **The "Inefficiency Tax":** Every new generation pays the price of making the same avoidable mistakes simply
@@ -96,9 +96,7 @@ outdated, inaccurate, or completely misleading.
 
 ### Overview
 
-To permanently end this cycle of lost knowledge, KUET_Titanium is building an offline-first Android application
-powered by an embedded SQLite database that acts as a living, evolving memory for the campus community — a system where practical knowledge is captured once, verified by the community, and passed down to every new batch automatically. It serves as a permanent, searchable campus repository that works
-anytime, anywhere—even without internet connectivity.
+To permanently end this cycle of lost knowledge, **KUET_Titanium** is building an offline-first Android application powered by an embedded SQLite database that acts as a living, evolving memory for the campus community — a system where practical knowledge is captured once, verified by the community, and passed down to every new batch automatically. It serves as a permanent, searchable campus repository that works anytime, anywhere—even without internet connectivity.
 
 
 
