@@ -45,11 +45,50 @@ Your system should somehow deal with the fact that not all knowledge is equally 
 
 ### 🤔 KUET_Titanium's Understanding
 
-Explain the problem in your own words. You may say a story mentioning your team member names!
+It’s a regular Sunday morning at the KUET CSE department. Ahnaf is rushing down the corridor holding an
+unorganized stack of clearance forms, completely confused about which room to submit them to or who needs to
+sign them first. At the same time, Mira is hunting for a specific hardware module for her project that isn't available
+in the central store, while Tahsin is frantically asking around for previous semester question papers that seem to
+have disappeared online.
+Just as frustration sets in, a familiar senior walks past, smiles, and clears up the entire mess in under two
+minutes:
+📍 **Ahnaf:** "Take that to Room 302, but make sure the Assistant Registrar signs it before 11 AM."
+📍 **Mira:** "Check the bottom-back drawer in CSE Lab 2; the previous batch left extra components there."
+📍 **Tahsin:** "Stop digging through dead Google Drive links—just ask the library assistant on the 2nd floor for
+the archived folder."
 
-What is the actual problem?
-Who experiences it?
-Why does it matter?
+Just like that, confusion turns into absolute clarity. Every campus has those go-to seniors who essentially hold the
+unofficial "user manual" to university life in their heads.
+
+**The Dilemma:** But then comes graduation day. The seniors toss their caps, leave campus, and take years
+of hard-earned shortcuts, procedural tricks, and practical wisdom right out the gate. The very next term, the
+new batch is forced to start back at square one, repeating the same struggles all over again.
+
+# ❓ **What is the actual problem?**
+It’s a classic case of institutional amnesia. Crucial operational knowledge on a campus rarely lives on official websites
+or handbooks—it lives inside people's heads. Without a structured way to pass this wisdom down, valuable campus
+hacks and practical guidelines vanish with every graduation cycle.
+
+# 👥 **Who experiences it?**
+**Students (Especially Freshers & Juniors)**: 
+They waste endless hours, energy, and sanity
+navigating basic campus bureaucracy, finding
+obscure resources, or figuring out how things actually
+work.
+
+**Faculty & Staff**:
+They end up answering the same repetitive
+procedural questions dozens of times every single
+semester because students have nowhere else to
+check.
+
+#💡 **Why does it matter?**
+**Wasted Energy:** Students spend critical time solving administrative riddles instead of building projects, studying,
+and innovating.
+**The "Inefficiency Tax":** Every new generation pays the price of making the same avoidable mistakes simply
+because past learnings were never preserved.
+**Misinformation Trap:** When advice is passed down informally through random chat groups, it quickly becomes
+outdated, inaccurate, or completely misleading.
 
 ---
 
@@ -57,7 +96,10 @@ Why does it matter?
 
 ### Overview
 
-We are building an offline-first Android app that acts as a living, evolving memory for the campus community — a system where practical knowledge is captured once, verified by the community, and passed down to every new batch automatically.
+To permanently end this cycle of lost knowledge, KUET_Titanium is building an offline-first Android application
+powered by an embedded SQLite database that acts as a living, evolving memory for the campus community — a system where practical knowledge is captured once, verified by the community, and passed down to every new batch automatically. It serves as a permanent, searchable campus repository that works
+anytime, anywhere—even without internet connectivity.
+
 
 
 # Core Objectives
