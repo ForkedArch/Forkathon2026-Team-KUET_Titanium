@@ -83,11 +83,11 @@ semester because students have nowhere else to
 check.
 
 #💡 **Why does it matter?**
-**Wasted Energy:** Students spend critical time solving administrative riddles instead of building projects, studying,
+- **Wasted Energy:** Students spend critical time solving administrative riddles instead of building projects, studying,
 and innovating.
-**The "Inefficiency Tax":** Every new generation pays the price of making the same avoidable mistakes simply
+- **The "Inefficiency Tax":** Every new generation pays the price of making the same avoidable mistakes simply
 because past learnings were never preserved.
-**Misinformation Trap:** When advice is passed down informally through random chat groups, it quickly becomes
+- **Misinformation Trap:** When advice is passed down informally through random chat groups, it quickly becomes
 outdated, inaccurate, or completely misleading.
 
 ---
