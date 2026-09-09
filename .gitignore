@@ -1,8 +1,45 @@
-*.iml
+.env
+.env.*
+.env.example
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+
+dist/
+build/
+out/
+coverage/
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+target/
+*.class
+
+*.o
+*.obj
+*.exe
+*.out
+
+.vscode/
+.idea/
+*.swp
+*.swo
 
 .DS_Store
+Thumbs.db
 
-/captures
+*.log
+tmp/
+temp/
 
-.cxx
+*.exe
+*.iml
 
