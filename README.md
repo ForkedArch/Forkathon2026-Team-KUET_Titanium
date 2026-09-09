@@ -69,7 +69,7 @@ We are building an offline-first Android app that acts as a living, evolving mem
 * 🔍Searchable Knowledge Chunks : Information is stored as bite-sized, self-contained, tagged entries rather than long, unstructured posts.Enables high-precision search to return exact answers instantly.
   
 * 🗺️ Guided Step-by-Step Roadmaps : Complex processes (e.g., getting a form signed, applying for a re-exam, course registration) are laid out as clear, sequential steps ($1 \rightarrow 2 \rightarrow 3$).
-* 
+  
 * ⏳ Data Validation & Lifespan : Every entry tracks a freshness and validity status.Automatically flags aging entries and allows community re-verification so outdated information loses trust over time.
   
 * 🏆 Contribution Scores & Levels : Tracks contributor accuracy through community verification. Users earn trust scores and level tiers, ensuring high-integrity contributors carry more weight than unverified sources.
