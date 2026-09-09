@@ -18,7 +18,30 @@
 
 ### Problem Statement
 
-> Replace this section with the problem statement assigned to your team.
+> The Student Who Knows Everything
+
+Every campus has that one person.
+
+They know which teacher prefers handwritten assignments. They know where to find a particular lab component. They know which form needs three signatures. They know which shortcut gets you to the library faster.
+
+Ask the senior anything,
+
+"Where do I submit this form?"
+"Which room is the lab in?"
+"Where can I find the previous question papers?"
+"Who do I contact about this?"
+
+they are the ultimate solution.
+
+But one day, they graduate.
+
+Suddenly, years of tiny pieces of useful knowledge disappear with them.
+
+Why not building a system that captures, organizes, verifies, and passes useful community knowledge from one generation of users to another.
+The information could relate to academic life, campus facilities, procedures, resources, tips, locations, events, or anything else that people repeatedly need to figure out.
+
+Brainstorming twist:
+Your system should somehow deal with the fact that not all knowledge is equally reliable, current, or useful.
 
 ### 🤔 [TEAM NAME]'s Understanding
 
@@ -34,7 +57,7 @@ Why does it matter?
 
 ### Overview
 
-Describe your proposed solution.
+We decided to code an efficient solution for it. Details to be disclosed later.
 
 ### How It Works
 
