@@ -61,12 +61,12 @@ We are building an offline-first Android app that acts as a living, evolving mem
 
 # Core Objectives
 
-📶 Offline-First Android App : Works seamlessly without an internet connection (inside thick lab walls, underground rooms, or low-signal campus areas).Automatically syncs new contributions whenever connectivity is restored.
-🗂️ Flexible Knowledge Database: Accommodates diverse data formats — locations, contacts, warnings, document requirements, and procedural steps. Built on a schema that handles flexible data types without forcing them into a rigid structure.
-🔍Searchable Knowledge Chunks : Information is stored as bite-sized, self-contained, tagged entries rather than long, unstructured posts.Enables high-precision search to return exact answers instantly.
-🗺️ Guided Step-by-Step Roadmaps : Complex processes (e.g., getting a form signed, applying for a re-exam, course registration) are laid out as clear, sequential steps ($1 \rightarrow 2 \rightarrow 3$).
-⏳ Data Validation & Lifespan : Every entry tracks a freshness and validity status.Automatically flags aging entries and allows community re-verification so outdated information loses trust over time.
-🏆 Contribution Scores & Levels : Tracks contributor accuracy through community verification. Users earn trust scores and level tiers, ensuring high-integrity contributors carry more weight than unverified sources.
+* 📶 Offline-First Android App : Works seamlessly without an internet connection (inside thick lab walls, underground rooms, or low-signal campus areas).Automatically syncs new contributions whenever connectivity is restored.
+* 🗂️ Flexible Knowledge Database: Accommodates diverse data formats — locations, contacts, warnings, document requirements, and procedural steps. Built on a schema that handles flexible data types without forcing them into a rigid structure.
+* 🔍Searchable Knowledge Chunks : Information is stored as bite-sized, self-contained, tagged entries rather than long, unstructured posts.Enables high-precision search to return exact answers instantly.
+* 🗺️ Guided Step-by-Step Roadmaps : Complex processes (e.g., getting a form signed, applying for a re-exam, course registration) are laid out as clear, sequential steps ($1 \rightarrow 2 \rightarrow 3$).
+* ⏳ Data Validation & Lifespan : Every entry tracks a freshness and validity status.Automatically flags aging entries and allows community re-verification so outdated information loses trust over time.
+* 🏆 Contribution Scores & Levels : Tracks contributor accuracy through community verification. Users earn trust scores and level tiers, ensuring high-integrity contributors carry more weight than unverified sources.
 
 In short: We are building a trust-aware, self-updating memory for the campus — ensuring that when the senior who knows everything graduates, everything they knew stays behind.
 
