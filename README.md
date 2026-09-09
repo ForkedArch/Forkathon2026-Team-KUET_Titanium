@@ -1,6 +1,6 @@
 <img src="https://i.ibb.co.com/7NrtB6Vv/image.png" />
 
-# Forkathon 2026: KUET Kinship by KUET_Titanium
+# Forkathon 2026: **KUET Kinship** by **KUET_Titanium**
 
 > Built for ForkedArch Freshers Hackathon 2026
 
@@ -52,9 +52,9 @@ in the central store, while Tahsin is frantically asking around for previous sem
 have disappeared online.
 Just as frustration sets in, a familiar senior walks past, smiles, and clears up the entire mess in under two
 minutes:
-📍 **Ahnaf:** "Take that to Room 302, but make sure the Assistant Registrar signs it before 11 AM."
-📍 **Mira:** "Check the bottom-back drawer in CSE Lab 2; the previous batch left extra components there."
-📍 **Tahsin:** "Stop digging through dead Google Drive links—just ask the library assistant on the 2nd floor for
+- 📍 **Ahnaf:** "Take that to Room 302, but make sure the Assistant Registrar signs it before 11 AM."
+- 📍 **Mira:** "Check the bottom-back drawer in CSE Lab 2; the previous batch left extra components there."
+- 📍 **Tahsin:** "Stop digging through dead Google Drive links—just ask the library assistant on the 2nd floor for
 the archived folder."
 
 Just like that, confusion turns into absolute clarity. Every campus has those go-to seniors who essentially hold the
@@ -102,17 +102,17 @@ To permanently end this cycle of lost knowledge, **KUET_Titanium** is building a
 
 # Core Objectives
 
-* 📶 Offline-First Android App : Works seamlessly without an internet connection (inside thick lab walls, underground rooms, or low-signal campus areas).Automatically syncs new contributions whenever connectivity is restored.
+* 📶 **Offline-First Android App:** Works seamlessly without an internet connection (inside thick lab walls, underground rooms, or low-signal campus areas).Automatically syncs new contributions whenever connectivity is restored.
   
-* 🗂️ Flexible Knowledge Database: Accommodates diverse data formats — locations, contacts, warnings, document requirements, and procedural steps. Built on a schema that handles flexible data types without forcing them into a rigid structure.
+* 🗂️ **Flexible Knowledge Database:** Accommodates diverse data formats — locations, contacts, warnings, document requirements, and procedural steps. Built on a schema that handles flexible data types without forcing them into a rigid structure.
   
-* 🔍Searchable Knowledge Chunks : Information is stored as bite-sized, self-contained, tagged entries rather than long, unstructured posts.Enables high-precision search to return exact answers instantly.
+* 🔍 **Searchable Knowledge Chunks:** Information is stored as bite-sized, self-contained, tagged entries rather than long, unstructured posts.Enables high-precision search to return exact answers instantly.
   
-* 🗺️ Guided Step-by-Step Roadmaps : Complex processes (e.g., getting a form signed, applying for a re-exam, course registration) are laid out as clear, sequential steps ($1 \rightarrow 2 \rightarrow 3$).
+* 🗺️ **Guided Step-by-Step Roadmaps:** Complex processes (e.g., getting a form signed, applying for a re-exam, course registration) are laid out as clear, sequential steps ($1 \rightarrow 2 \rightarrow 3$).
   
-* ⏳ Data Validation & Lifespan : Every entry tracks a freshness and validity status.Automatically flags aging entries and allows community re-verification so outdated information loses trust over time.
+* ⏳ **Data Validation & Lifespan:** Every entry tracks a freshness and validity status.Automatically flags aging entries and allows community re-verification so outdated information loses trust over time.
   
-* 🏆 Contribution Scores & Levels : Tracks contributor accuracy through community verification. Users earn trust scores and level tiers, ensuring high-integrity contributors carry more weight than unverified sources.
+* 🏆 **Contribution Scores & Levels:** Tracks contributor accuracy through community verification. Users earn trust scores and level tiers, ensuring high-integrity contributors carry more weight than unverified sources.
 
 In short: We are building a trust-aware, self-updating memory for the campus — ensuring that when the senior who knows everything graduates, everything they knew stays behind.
 
