@@ -119,11 +119,30 @@ In short: We are building a trust-aware, self-updating memory for the campus —
 
 ### How It Works
 
-Explain the complete flow of your system.
+**How the App Works — General User Flow**
+This section is written for general users, not developers. The goal is to explain the app in a simple 'tap →
+choose → get information' style.
 
-1.
-2.
-3.
+- **#Finding Course Information**
+Open KUET Kinship → go to the academic/course section → select your year → select your term/semester
+→ select your course → view the available course information.
+
+- **#Checking Exam Information**
+Open KUET Kinship → go to the exam section → choose the relevant academic information → open the
+available exam information → check the details.
+
+- **#Reading Lecture Notes**
+Open KUET Kinship → tap the lecture-notes section → choose the relevant academic/course information
+→ open the available note → read the material.
+
+- **#Finding a Room or Lab**
+Open KUET Kinship → go to Rooms & Labs → find/select the required room or lab → view its information
+→ use the navigation option to help reach the selected location.
+
+- **#In One Simple Example**
+Suppose you want to find information about a course: Open the app → choose your year → choose your
+term → choose the course → see the available information. That's the basic idea: the user selects what
+they need step by step, and the app shows the relevant information.
 
 ---
 
