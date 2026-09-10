@@ -474,7 +474,7 @@
                         </RelativeLayout>
                     </com.google.android.material.card.MaterialCardView>
 
-                    <!-- CARD 3: Class Tests -->
+                    <!-- CARD 3: Exams -->
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -528,7 +528,7 @@
                                 android:layout_below="@id/iconCard3"
                                 android:layout_marginTop="12dp"
                                 android:fontFamily="@font/jakarta_sans_bold"
-                                android:text="Class Tests"
+                                android:text="Exams"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
 
@@ -576,7 +576,7 @@
                         app:cardBackgroundColor="?attr/colorSurfaceContainer"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="0dp"
-
+                        android:id="@+id/card_notes"
                         app:strokeWidth="1dp">
 
                         <RelativeLayout

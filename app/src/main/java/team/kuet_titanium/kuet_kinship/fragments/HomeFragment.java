@@ -2,6 +2,7 @@ package team.kuet_titanium.kuet_kinship.fragments;
 
 import android.animation.Animator;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
@@ -16,12 +17,20 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelStore;
 import androidx.lifecycle.viewmodel.CreationExtras;
 
+import android.util.AttributeSet;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 
+import com.google.android.material.card.MaterialCardView;
+
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
+
+import team.kuet_titanium.kuet_kinship.LectureNotesActivity;
 import team.kuet_titanium.kuet_kinship.R;
 
 /**
@@ -77,6 +86,19 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        MaterialCardView cardNotes = view.findViewById(R.id.card_notes);
+
+        cardNotes.setOnClickListener(v -> {
+            Intent intent = new Intent(requireContext(), LectureNotesActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    //Do not touch these:
 
     @Override
     public void onLowMemory() {
@@ -165,9 +187,103 @@ public class HomeFragment extends Fragment {
         return super.onCreateAnimator(transit, enter, nextAnim);
     }
 
+    @NonNull
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    public String toString() {
+        return super.toString();
+    }
+
+    @Override
+    public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs, @Nullable Bundle savedInstanceState) {
+        super.onInflate(context, attrs, savedInstanceState);
+    }
+
+    @Override
+    public boolean shouldShowRequestPermissionRationale(@NonNull String permission) {
+        return super.shouldShowRequestPermissionRationale(permission);
+    }
+
+    @NonNull
+    @Override
+    public LayoutInflater onGetLayoutInflater(@Nullable Bundle savedInstanceState) {
+        return super.onGetLayoutInflater(savedInstanceState);
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+    }
+
+    @Override
+    public void onCreateContextMenu(@NonNull ContextMenu menu, @NonNull View v, @Nullable ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+    }
+
+    @Override
+    public void setSharedElementEnterTransition(@Nullable Object transition) {
+        super.setSharedElementEnterTransition(transition);
+    }
+
+    @Nullable
+    @Override
+    public Object getSharedElementEnterTransition() {
+        return super.getSharedElementEnterTransition();
+    }
+
+    @Override
+    public void setSharedElementReturnTransition(@Nullable Object transition) {
+        super.setSharedElementReturnTransition(transition);
+    }
+
+    @Nullable
+    @Override
+    public Object getSharedElementReturnTransition() {
+        return super.getSharedElementReturnTransition();
+    }
+
+    @Override
+    public void setAllowEnterTransitionOverlap(boolean allow) {
+        super.setAllowEnterTransitionOverlap(allow);
+    }
+
+    @Override
+    public void setAllowReturnTransitionOverlap(boolean allow) {
+        super.setAllowReturnTransitionOverlap(allow);
+    }
+
+    @Override
+    public boolean getAllowEnterTransitionOverlap() {
+        return super.getAllowEnterTransitionOverlap();
+    }
+
+    @Override
+    public boolean getAllowReturnTransitionOverlap() {
+        return super.getAllowReturnTransitionOverlap();
+    }
+
+    @Override
+    public void postponeEnterTransition() {
+        super.postponeEnterTransition();
+    }
+
+    @Override
+    public void startPostponedEnterTransition() {
+        super.startPostponedEnterTransition();
+    }
+
+    @Override
+    public void dump(@NonNull String prefix, @Nullable FileDescriptor fd, @NonNull PrintWriter writer, @Nullable String[] args) {
+        super.dump(prefix, fd, writer, args);
     }
 
     @Nullable
