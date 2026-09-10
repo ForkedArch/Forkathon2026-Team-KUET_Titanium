@@ -144,6 +144,30 @@ Suppose you want to find information about a course: Open the app → choose you
 term → choose the course → see the available information. That's the basic idea: the user selects what
 they need step by step, and the app shows the relevant information.
 
+#**Developer-Oriented Application Flow**
+
+This section describes the internal flow of the application from a developer's perspective. It is
+intentionally separate from the simple public-facing usage instructions below.
+
+**1. Application Entry:** The Android application starts through MainActivity, which establishes the main
+screen/navigation structure.
+
+**2. Dashboard Layer:** HomeFragment serves as the central dashboard from which the implemented
+feature modules can be reached.
+
+**3. Academic Navigation:** The academic flow is divided into YearSelectionFragment,
+TermSelectionFragment and CourseSelectionFragment, allowing the application to narrow the user's
+selection step by step.
+
+**4. Feature Modules:** Exam, lecture-note, and room/lab functionality is separated into dedicated
+Activities. This keeps feature-specific UI and logic modular.
+
+**5. Room Navigation:** RoomsAndLabsActivity handles room/lab information and RoomNavigateActivity
+handles the navigation experience for a selected room.
+
+**6. UI Binding and Asynchronous Components:** The APK includes generated binding classes for Activities
+and Fragments and Kotlin Coroutine-related components, supporting structured UI access and
+asynchronous work.
 ---
 
 ## 🏗️ Architecture
