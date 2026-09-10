@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.ActionBar;
@@ -49,6 +50,9 @@ public class RoomsAndLabsActivity extends AppCompatActivity {
         btn1.setOnClickListener(view -> intentNav());
         btn2.setOnClickListener(view -> intentNav());
         btn3.setOnClickListener(view -> intentNav());
+
+        TextView rl_back = findViewById(R.id.rl_back);
+        rl_back.setOnClickListener(view -> getOnBackPressedDispatcher().onBackPressed());
     }
 
     private void intentNav(){

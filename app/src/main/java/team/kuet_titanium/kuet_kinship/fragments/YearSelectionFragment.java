@@ -87,6 +87,8 @@ public class YearSelectionFragment extends Fragment {
         view.findViewById(R.id.c_yr_2).setOnClickListener(v -> host.onYearSelected("2nd yr"));
         view.findViewById(R.id.c_yr_3).setOnClickListener(v -> host.onYearSelected("3rd yr"));
         view.findViewById(R.id.c_yr_4).setOnClickListener(v -> host.onYearSelected("4th yr"));
+
+        view.findViewById(R.id.rl_back).setOnClickListener(v -> requireActivity().getOnBackPressedDispatcher().onBackPressed());
     }
 
     //Do not touch these codes:

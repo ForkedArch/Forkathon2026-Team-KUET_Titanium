@@ -342,8 +342,7 @@
                                 android:layout_below="@id/iconCard1"
                                 android:layout_marginTop="12dp"
                                 android:fontFamily="@font/jakarta_sans_bold"
-                                android:text="Class Locator"
-
+                                android:text="Guided Assistance"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
 
@@ -355,7 +354,7 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/jakarta_sans_medium"
                                 android:maxLines="2"
-                                android:text="No changes in your course."
+                                android:text="New guides added."
                                 android:textColor="@color/body_subtext"
                                 android:textSize="12sp" />
 
@@ -365,7 +364,7 @@
                                 android:layout_below="@id/tvDesc1"
                                 android:layout_marginTop="16dp"
                                 android:fontFamily="@font/jakarta_sans_bold"
-                                android:text="ROUTINE"
+                                android:text="VIEW"
                                 android:textColor="@color/text_green"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />

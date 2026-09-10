@@ -20,6 +20,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/chip_blue"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:text="‹  Dashboard"
+                android:textColor="@color/navy"
+                android:fontFamily="@font/jakarta_sans_medium"
+                android:id="@+id/rl_back"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
             <!-- Title and Subtitle -->
             <TextView
                 android:layout_width="wrap_content"

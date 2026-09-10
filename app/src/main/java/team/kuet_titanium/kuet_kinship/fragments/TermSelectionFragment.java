@@ -88,6 +88,8 @@ public class TermSelectionFragment extends Fragment {
         view.findViewById(R.id.c_odd_post).setOnClickListener(v -> host.onTermSelected("odd post"));
         view.findViewById(R.id.c_even_pre).setOnClickListener(v -> host.onTermSelected("even pre"));
         view.findViewById(R.id.c_even_post).setOnClickListener(v -> host.onTermSelected("even post"));
+
+        view.findViewById(R.id.rl_back).setOnClickListener(v -> requireActivity().getOnBackPressedDispatcher().onBackPressed());
     }
 
     @NonNull

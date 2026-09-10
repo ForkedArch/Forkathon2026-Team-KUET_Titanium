@@ -15,17 +15,37 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingTop="8dp"
             android:paddingRight="16dp"
             android:paddingLeft="16dp">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/chip_blue"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:text="‹  Dashboard"
+                android:textColor="@color/navy"
+                android:fontFamily="@font/jakarta_sans_medium"
+                android:id="@+id/rl_back"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Exams &amp; Question Bank"
                 android:fontFamily="@font/jakarta_sans_bold"
-                android:textSize="20sp"
+                android:textSize="28sp"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="match_parent"
@@ -66,13 +86,13 @@
                         android:text="Previous Year Questions &amp;&#10;Solutions"
                         android:fontFamily="@font/jakarta_sans_bold"
                         android:textColor="@color/white"
-                        android:textSize="19sp"
+                        android:textSize="22sp"
                         android:textStyle="bold"/>
                     <ImageView
                         android:layout_width="84dp"
                         android:layout_height="84dp"
                         android:src="@drawable/book"
-                        android:layout_marginLeft="48dp"/>
+                        android:layout_marginLeft="8dp"/>
                 </LinearLayout>
 
                 <TextView
@@ -135,83 +155,105 @@
                     android:textStyle="bold"/>
             </LinearLayout
                 >
-            <LinearLayout
-                android:id="@+id/finalsCard"
+        </LinearLayout>
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="84dp"
-                android:layout_marginTop="14dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cream"
+                app:cardElevation="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
 
-                android:background="@drawable/card_cream"
-                android:orientation="vertical"
-                android:padding="12dp">
 
                 <LinearLayout
+                    android:id="@+id/finalsCard"
                     android:layout_width="match_parent"
-                    android:layout_height="43dp"
-                    android:gravity="center_vertical">
-                    <TextView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:background="@drawable/chip_gold"
-                        android:gravity="center"
-                        android:text="◷"
-                        android:textColor="#855B00"
-                        android:textSize="30dp"/>
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                    android:layout_height="84dp"
 
-                        android:layout_marginStart="8dp"
-                        android:layout_weight="1"
-                        android:text="Semester Finals begin in 14&#10;days"
-                        android:textColor="#694A00"
-                        android:fontFamily="@font/jakarta_sans_bold"
-                        android:textSize="14sp"
-                        android:textStyle="bold"/>
+
+
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/chip_gold"
+                            android:gravity="center"
+                            android:text="◷"
+                            android:textColor="#855B00"
+                            android:textSize="30dp"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:text="Semester Finals begin in 14&#10;days"
+                            android:textColor="#694A00"
+                            android:fontFamily="@font/jakarta_sans_bold"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="72dp"
+                            android:layout_height="23dp"
+                            android:background="@drawable/chip_gold"
+                            android:gravity="center"
+                            android:text="24th September"
+                            android:textColor="#694A00"
+                            android:textSize="8sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
                     <TextView
-                        android:layout_width="72dp"
-                        android:layout_height="23dp"
-                        android:background="@drawable/chip_gold"
-                        android:gravity="center"
-                        android:text="24th September"
-                        android:textColor="#694A00"
-                        android:textSize="8sp"
-                        android:textStyle="bold"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="40dp"
+                        android:text="Starts September 24 • 2 Weeks Remaining"
+                        android:textColor="@color/muted"
+                        android:textSize="9sp"/>
+
+                    <!--LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="⌾  Central Auditorium &amp; Academic&#10;    Bldgs"
+                            android:textColor="#5C6B7A"
+                            android:textSize="8sp"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Seat Plan &amp;&#10;Routine"
+                            android:fontFamily="@font/jakarta_sans_bold"
+                            android:textSize="9sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="›"
+                            android:fontFamily="@font/jakarta_sans_bold"
+                            android:textSize="22sp"/>
+                    </LinearLayout-->
                 </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="18dp"
-                    android:layout_marginStart="40dp"
-                    android:text="Starts September 24 • 2 Weeks Remaining"
-                    android:textColor="@color/muted"
-                    android:textSize="9sp"/>
 
-                <!--LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="34dp">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="⌾  Central Auditorium &amp; Academic&#10;    Bldgs"
-                        android:textColor="#5C6B7A"
-                        android:textSize="8sp"/>
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="Seat Plan &amp;&#10;Routine"
-                        android:fontFamily="@font/jakarta_sans_bold"
-                        android:textSize="9sp"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="25dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="›"
-                        android:fontFamily="@font/jakarta_sans_bold"
-                        android:textSize="22sp"/>
-                </LinearLayout-->
-            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+           <!--Break here-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="43dp"
@@ -584,7 +626,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Mobasshira Sadia Sakal Mira"
+                                    android:text="Mobasshira Sadia Mira"
                                     android:fontFamily="@font/jakarta_sans_bold"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
@@ -809,7 +851,9 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:cornerRadius="12dp" />
+            </LinearLayout>
         </LinearLayout>
+
     </ScrollView>
 
 

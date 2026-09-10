@@ -55,16 +55,29 @@ public class LectureNotesActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             loadFragment(new YearSelectionFragment());
         }
+
+
     }
 
+    //Fixed bug
     public void onYearSelected(String year) {
         this.selectedYear = year;
-        loadFragment(new TermSelectionFragment(), true);
+        if ("1st yr".equals(selectedYear)){
+            loadFragment(new TermSelectionFragment(), true);
+        } else {
+            Toast.makeText(LectureNotesActivity.this, "Sorry, the section flow for other years were not implemented. Please try choosing 1st year.", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     public void onTermSelected(String term) {
         this.selectedTerm = term;
-        loadFragment(new CourseSelectionFragment(), true);
+        if ("odd pre".equals(selectedTerm) || "odd post".equals(selectedTerm)){
+            loadFragment(new CourseSelectionFragment(), true);
+        } else {
+            Toast.makeText(LectureNotesActivity.this, "Sorry, secfion flow for even term isn't implemented.", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     public void onCourseSelected(String course) {
@@ -91,15 +104,20 @@ public class LectureNotesActivity extends AppCompatActivity {
         if ("1st yr".equals(selectedYear)){
             if ("odd pre".equals(selectedTerm) || "odd post".equals(selectedTerm) || "even pre".equals(selectedTerm) || "even post".equals(selectedTerm)){
                 if ("PHY 1107".equals(selectedCourse)){
-                    Toast.makeText(LectureNotesActivity.this, "We will redirect you to our repo link as a dummy implementation", Toast.LENGTH_SHORT).show();
+                    targetUrl = "https://drive.google.com/drive/folders/18On-yGbCvppu5jSGKjp3OPsirDcdBwt1?usp=drive_link";
+                    //Toast.makeText(LectureNotesActivity.this, "We will redirect you to our repo link as a dummy implementation", Toast.LENGTH_SHORT).show();
                 } else if ("CSE 1107".equals(selectedCourse)){
-                    Toast.makeText(LectureNotesActivity.this, "We will redirect you to our repo link as a dummy implementation", Toast.LENGTH_SHORT).show();
+                    targetUrl = "https://drive.google.com/drive/folders/10YGuSj6Zx-74KI80WK6Niviwv3m-SCGY?usp=drive_link";
+                    //Toast.makeText(LectureNotesActivity.this, "We will redirect you to our repo link as a dummy implementation", Toast.LENGTH_SHORT).show();
                 } else if("CSE 1101".equals(selectedCourse)){
-                    Toast.makeText(LectureNotesActivity.this, "We will redirect you to our repo link as a dummy implementation", Toast.LENGTH_SHORT).show();
+                    targetUrl = "https://drive.google.com/drive/folders/1DosW7GiPTzlFFrvzuUlTBR6kZMN8qgmg?usp=drive_link";
+                    //Toast.makeText(LectureNotesActivity.this, "We will redirect you to our repo link as a dummy implementation", Toast.LENGTH_SHORT).show();
                 } else if("MATH 1107".equals(selectedCourse)){
-                    Toast.makeText(LectureNotesActivity.this, "We will redirect you to our repo link as a dummy implementation", Toast.LENGTH_SHORT).show();
+                    targetUrl = "https://drive.google.com/drive/folders/1vhC0Wbv2LKN8SLyxqiK--n1m2Tw_ZX4y?usp=drive_link";
+                    //Toast.makeText(LectureNotesActivity.this, "We will redirect you to our repo link as a dummy implementation", Toast.LENGTH_SHORT).show();
                 } else if ("HUM 1107".equals(selectedCourse)){
-                    Toast.makeText(LectureNotesActivity.this, "We will redirect you to our repo link as a dummy implementation", Toast.LENGTH_SHORT).show();
+                    targetUrl = "https://drive.google.com/drive/folders/19EZUqiWbAuLIULw7GbaOfkXFH6aHCK4g?usp=drive_link";
+                    //Toast.makeText(LectureNotesActivity.this, "We will redirect you to our repo link as a dummy implementation", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(LectureNotesActivity.this, "Unexpected token detected", Toast.LENGTH_SHORT).show();
                 }

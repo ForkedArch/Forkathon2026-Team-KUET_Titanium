@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.ActionBar;
@@ -35,6 +36,9 @@ public class ExamAndStuffActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        TextView rl_back = findViewById(R.id.rl_back);
+        rl_back.setOnClickListener(view -> getOnBackPressedDispatcher().onBackPressed());
     }
 
     //Do not touch these code unless necessary

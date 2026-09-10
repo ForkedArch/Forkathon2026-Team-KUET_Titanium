@@ -94,6 +94,8 @@ public class CourseSelectionFragment extends Fragment {
         view.findViewById(R.id.c_cse_1101).setOnClickListener(v -> host.onCourseSelected("CSE 1101"));
         view.findViewById(R.id.c_math_1107).setOnClickListener(v -> host.onCourseSelected("MATH 1107"));
         view.findViewById(R.id.c_hum_1107).setOnClickListener(v -> host.onCourseSelected("HUM 1107"));
+
+        view.findViewById(R.id.rl_back).setOnClickListener(v -> requireActivity().getOnBackPressedDispatcher().onBackPressed());
     }
 
     //Do not touch these
