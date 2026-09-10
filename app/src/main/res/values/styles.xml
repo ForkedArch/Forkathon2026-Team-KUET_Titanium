@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Custom.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemActiveIndicatorStyle">@style/Widget.Custom.BottomNavigationView.ActiveIndicator</item>
+    </style>
+
+    <style name="Widget.Custom.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/icon_bg_tan</item>
+    </style>
+</resources>

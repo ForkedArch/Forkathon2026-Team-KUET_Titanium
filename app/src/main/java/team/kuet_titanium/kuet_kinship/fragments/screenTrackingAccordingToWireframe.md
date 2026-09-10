@@ -1,0 +1,4 @@
+shown in MainActivity:
+HomeFragment
+BlankFragment
+UpdatesFragment

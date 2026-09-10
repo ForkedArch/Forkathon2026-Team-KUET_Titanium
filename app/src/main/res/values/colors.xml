@@ -2,4 +2,51 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_mint_green">#62C69B</color>
+    <color name="text_gold">#E8B86D</color>
+    <color name="text_light_green">#A4D7C2</color>
+    <color name="btn_text_green">#006B49</color>
+
+    <color name="card_bg_green">#006B49</color>
+    <color name="inner_card_bg_green">#0A5B40</color>
+    <color name="icon_bg_tan">#F7D399</color>
+
+    <color name="search_outline">#E3E9F8</color>
+    <color name="search_bg_white">#FFFFFF</color>
+    <color name="search_icon_bg">#E6F0EB</color>
+    <color name="filter_icon_bg">#EAF0FF</color>
+
+    <color name="search_icon_color">#124B38</color>
+    <color name="filter_icon_color">#334D6E</color>
+
+    <!-- General Text & Borders -->
+    <color name="title_dark">#0F172A</color>
+    <color name="body_subtext">#64748B</color>
+    <color name="card_border">#E2E8F0</color>
+
+    <!-- Card 1: Green Accent -->
+    <color name="icon_bg_green">#A7F3D0</color>
+    <color name="icon_tint_green">#065F46</color>
+    <color name="tag_bg_green">#E6F4EA</color>
+    <color name="text_green">#047857</color>
+
+    <!-- Card 2: Yellow/Orange Accent -->
+    <color name="icon_bg_yellow">#FDE68A</color>
+    <color name="icon_tint_yellow">#78350F</color>
+    <color name="tag_bg_blue_light">#E0E7FF</color>
+    <color name="text_yellow">#B45309</color>
+
+    <!-- Card 3: Orange/Red Accent -->
+    <color name="icon_bg_orange">#FED7AA</color>
+    <color name="icon_tint_orange">#7C2D12</color>
+    <color name="tag_bg_orange_dark">#9A3412</color>
+    <color name="text_orange">#9A3412</color>
+
+    <!-- Card 4: Blue/Teal Accent -->
+    <color name="icon_bg_blue">#DDD6FE</color>
+    <color name="icon_tint_blue">#1E1B4B</color>
+    <color name="tag_bg_blue_soft">#E0E7FF</color>
+    <color name="text_teal">#0F766E</color>
 </resources>

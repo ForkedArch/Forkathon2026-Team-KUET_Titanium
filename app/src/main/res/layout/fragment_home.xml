@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment"
+    android:padding="24dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:elevation="8dp"
+                app:cardBackgroundColor="#006a4e"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp"
+                android:id="@+id/intro_card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakarta_sans_bold"
+                        android:padding="16dp"
+                        android:text="WELCOME BACK, AHNAF! 👋"
+                        android:textColor="@color/white"
+                        android:textFontWeight="500"
+                        android:textSize="32dp" />
+
+                    <!-- Inner Live Class Card -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/inner_card_bg_green"
+                        app:cardCornerRadius="18dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp">
+
+                            <!-- Icon Box -->
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/cvIconBox"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                app:cardBackgroundColor="@color/icon_bg_tan"
+                                app:cardCornerRadius="16dp"
+                                app:cardElevation="0dp"
+                                app:strokeWidth="0dp">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="center"
+                                    android:contentDescription="Live"
+                                    android:src="@drawable/ic_classroom"
+                                    app:tint="@color/inner_card_bg_green" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <!-- Class Information -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_toStartOf="@id/btnLocate"
+                                android:layout_toEndOf="@id/cvIconBox"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/jakarta_sans_medium"
+                                    android:letterSpacing="0.05"
+                                    android:text="● THEORY CLASS"
+                                    android:textColor="@color/text_mint_green"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="@font/jakarta_sans_medium"
+                                    android:text="CSE-1101 · Room 102"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/jakarta_sans_medium"
+                                    android:text="Academic Building - Block B"
+                                    android:textColor="@color/text_light_green"
+                                    android:textSize="11sp" />
+                            </LinearLayout>
+
+                            <!-- Locate Button -->
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnLocate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:backgroundTint="@color/text_white"
+                                android:minWidth="0dp"
+                                android:paddingHorizontal="16dp"
+                                android:text="Locate"
+                                android:textColor="@color/btn_text_green"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                app:cornerRadius="16dp" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Search Box Container -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/search_bg_white"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="8dp"
+                android:id="@+id/sb_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intro_card"
+                app:strokeColor="@color/search_outline"
+                app:strokeWidth="1.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp">
+
+                    <!-- Left Search Icon Container -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvSearchIcon"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        app:cardBackgroundColor="@color/search_icon_bg"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="0dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="Search"
+                            android:src="@android:drawable/ic_menu_search"
+                            app:tint="@color/search_icon_color" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Editable Input Field -->
+                    <EditText
+                        android:id="@+id/etSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_toStartOf="@id/cvFilterIcon"
+                        android:layout_toEndOf="@id/cvSearchIcon"
+                        android:background="@null"
+                        android:hint="Search..."
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="#1E293B"
+                        android:textColorHint="#94A3B8"
+                        android:textSize="15sp" />
+
+                    <!-- Right Filter Icon Container -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvFilterIcon"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:cardBackgroundColor="@color/filter_icon_bg"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="0dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="Filter"
+                            android:src="@drawable/ic_filter"
+                            app:tint="@color/filter_icon_color" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="64dp"
+
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb_container">
+
+                <!-- Header Section -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Campus Navigation"
+                            android:fontFamily="@font/jakarta_sans_bold"
+                            android:textColor="@color/title_dark"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="Updated 5m ago"
+                        android:fontFamily="@font/jakarta_sans_medium"
+                        android:textColor="@color/body_subtext"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <!-- 2x2 Grid Section -->
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="2">
+
+                    <!-- CARD 1: Class Locator -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/card_border"
+                        app:strokeWidth="1dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/iconCard1"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                app:cardBackgroundColor="@color/icon_bg_green"
+                                app:cardCornerRadius="14dp"
+                                app:cardElevation="0dp"
+                                app:strokeWidth="0dp">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_gravity="center"
+                                    android:src="@android:drawable/ic_menu_my_calendar"
+                                    app:tint="@color/icon_tint_green" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:background="@color/tag_bg_green"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="4dp"
+                                android:text="Updated Today"
+                                android:textColor="@color/text_green"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvTitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iconCard1"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:text="Class Locator"
+                                android:textColor="@color/title_dark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDesc1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvTitle1"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="@font/jakarta_sans_medium"
+                                android:maxLines="2"
+                                android:text="No changes in your course."
+                                android:textColor="@color/body_subtext"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvDesc1"
+                                android:layout_marginTop="16dp"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:text="ROUTINE"
+                                android:textColor="@color/text_green"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_alignTop="@id/tvDesc1"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="52dp"
+                                android:src="@android:drawable/ic_menu_send"
+                                app:tint="@color/text_green" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- CARD 2: Rooms & Labs -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/card_border"
+                        app:strokeWidth="1dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/iconCard2"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                app:cardBackgroundColor="@color/icon_bg_yellow"
+                                app:cardCornerRadius="14dp"
+                                app:cardElevation="0dp"
+                                app:strokeWidth="0dp">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_gravity="center"
+                                    android:src="@android:drawable/ic_menu_directions"
+                                    app:tint="@color/icon_tint_yellow" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:background="@color/icon_bg_yellow"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="4dp"
+                                android:text="Updated Today"
+                                android:textColor="#3730A3"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvTitle2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iconCard2"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:text="Rooms &amp; Labs"
+                                android:textColor="@color/title_dark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDesc2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvTitle2"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="@font/jakarta_sans_medium"
+                                android:maxLines="2"
+                                android:text="No changes in your course."
+                                android:textColor="@color/body_subtext"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvDesc2"
+                                android:layout_marginTop="16dp"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:text="CAMPUS MAP"
+                                android:textColor="@color/text_yellow"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_alignTop="@id/tvDesc2"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="52dp"
+                                android:src="@android:drawable/ic_menu_compass"
+                                app:tint="@color/text_yellow" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- CARD 3: Class Tests -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/card_border"
+                        app:strokeWidth="1dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/iconCard3"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                app:cardBackgroundColor="@color/icon_bg_orange"
+                                app:cardCornerRadius="14dp"
+                                app:cardElevation="0dp"
+                                app:strokeWidth="0dp">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_gravity="center"
+                                    android:src="@android:drawable/ic_menu_edit"
+                                    app:tint="@color/icon_tint_orange" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:background="@color/tag_bg_orange_dark"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="4dp"
+                                android:text="Updated 3d ago"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvTitle3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iconCard3"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:text="Class Tests"
+                                android:textColor="@color/title_dark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDesc3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvTitle3"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="@font/jakarta_sans_medium"
+                                android:maxLines="2"
+                                android:text="EEE-3109: Sun 9 AM, NAB 302. Op-Amps syllabus."
+                                android:textColor="@color/body_subtext"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvDesc3"
+                                android:layout_marginTop="16dp"
+                                android:text="SEAT PLANS"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:textColor="@color/text_orange"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_alignTop="@id/tvDesc3"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="52dp"
+                                android:src="@android:drawable/ic_menu_send"
+                                app:tint="@color/text_orange" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- CARD 4: Lecture Notes -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/card_border"
+                        app:strokeWidth="1dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/iconCard4"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                app:cardBackgroundColor="@color/icon_bg_blue"
+                                app:cardCornerRadius="14dp"
+                                app:cardElevation="0dp"
+                                app:strokeWidth="0dp">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_gravity="center"
+                                    android:src="@android:drawable/ic_menu_agenda"
+                                    app:tint="@color/icon_tint_blue" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:background="@color/tag_bg_blue_soft"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="4dp"
+                                android:text="Updated Today"
+                                android:textColor="#3730A3"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvTitle4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iconCard4"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:text="Lecture Notes"
+                                android:textColor="@color/title_dark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDesc4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvTitle4"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="@font/jakarta_sans_medium"
+                                android:maxLines="2"
+                                android:text="Handwritten notes, teacher slides &amp; '18-'23..."
+                                android:textColor="@color/body_subtext"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvDesc4"
+                                android:layout_marginTop="16dp"
+                                android:text="VIEW DRIVE"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:textColor="@color/text_teal"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_alignTop="@id/tvDesc4"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="52dp"
+                                android:src="@android:drawable/ic_menu_gallery"
+                                app:tint="@color/text_teal" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </GridLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>
