@@ -66,6 +66,7 @@ public class LectureNotesActivity extends AppCompatActivity {
     private void openCourseLink() {
         String targetUrl = "https://github.com/ForkedArch/Forkathon2026-Team-KUET_Titanium"; // Default fallback
 
+        //Todo: Replace with real drive links
         //Dummy data implemented here
         if ("1st yr".equals(selectedYear)){
             if ("odd pre".equals(selectedTerm) || "odd post".equals(selectedTerm) || "even pre".equals(selectedTerm) || "even post".equals(selectedTerm)){
