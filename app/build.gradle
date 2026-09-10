@@ -36,7 +36,7 @@ dependencies {
     implementation libs.appcompat
     implementation libs.constraintlayout
     implementation 'io.github.muddz:styleabletoast:2.4.0'
-    implementation 'com.github.requery:sqlite-android:3.50.4'
+    //implementation 'com.github.requery:sqlite-android:3.50.4'
     implementation libs.material
     testImplementation libs.junit
     androidTestImplementation libs.espresso.core

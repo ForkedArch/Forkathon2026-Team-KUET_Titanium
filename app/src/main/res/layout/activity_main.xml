@@ -25,7 +25,7 @@
         android:background="@color/text_light_green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:itemRippleColor="@color/card_bg_green"
+        app:itemRippleColor="@color/text_gold"
         app:itemIconTint="@color/icon_tint_green"
         app:itemTextColor="@color/icon_tint_green"
         app:layout_constraintTop_toBottomOf="@+id/fragment_container"

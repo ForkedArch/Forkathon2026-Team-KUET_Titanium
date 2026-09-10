@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment"
-    android:padding="24dp">
+    >
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -13,7 +13,9 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+
+            android:paddingTop="16dp">
 
 
             <com.google.android.material.card.MaterialCardView
@@ -23,6 +25,8 @@
                 app:cardBackgroundColor="#006a4e"
                 app:cardCornerRadius="32dp"
                 app:cardElevation="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
                 android:id="@+id/intro_card"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -147,9 +151,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="24dp"
-                app:cardBackgroundColor="@color/search_bg_white"
+                app:cardBackgroundColor="?attr/colorSurfaceContainer"
                 app:cardCornerRadius="28dp"
                 app:cardElevation="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:id="@+id/sb_container"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -230,7 +236,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="64dp"
-
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -256,7 +263,6 @@
                             android:layout_height="wrap_content"
                             android:text="Campus Navigation"
                             android:fontFamily="@font/jakarta_sans_bold"
-                            android:textColor="@color/title_dark"
                             android:textSize="22sp"
                             android:textStyle="bold" />
 
@@ -288,10 +294,10 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_margin="6dp"
-                        app:cardBackgroundColor="@android:color/white"
+                        app:cardBackgroundColor="?attr/colorSurfaceContainer"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="0dp"
-                        app:strokeColor="@color/card_border"
+
                         app:strokeWidth="1dp">
 
                         <RelativeLayout
@@ -326,6 +332,7 @@
                                 android:text="Updated Today"
                                 android:textColor="@color/text_green"
                                 android:textSize="10sp"
+
                                 android:textStyle="bold" />
 
                             <TextView
@@ -336,7 +343,7 @@
                                 android:layout_marginTop="12dp"
                                 android:fontFamily="@font/jakarta_sans_bold"
                                 android:text="Class Locator"
-                                android:textColor="@color/title_dark"
+
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
 
@@ -368,7 +375,7 @@
                                 android:layout_height="16dp"
                                 android:layout_alignTop="@id/tvDesc1"
                                 android:layout_alignParentEnd="true"
-                                android:layout_marginTop="52dp"
+                                android:layout_marginTop="48dp"
                                 android:src="@android:drawable/ic_menu_send"
                                 app:tint="@color/text_green" />
                         </RelativeLayout>
@@ -381,10 +388,10 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_margin="6dp"
-                        app:cardBackgroundColor="@android:color/white"
+                        app:cardBackgroundColor="?attr/colorSurfaceContainer"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="0dp"
-                        app:strokeColor="@color/card_border"
+
                         app:strokeWidth="1dp">
 
                         <RelativeLayout
@@ -429,7 +436,7 @@
                                 android:layout_marginTop="12dp"
                                 android:fontFamily="@font/jakarta_sans_bold"
                                 android:text="Rooms &amp; Labs"
-                                android:textColor="@color/title_dark"
+
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
 
@@ -461,7 +468,7 @@
                                 android:layout_height="16dp"
                                 android:layout_alignTop="@id/tvDesc2"
                                 android:layout_alignParentEnd="true"
-                                android:layout_marginTop="52dp"
+                                android:layout_marginTop="48dp"
                                 android:src="@android:drawable/ic_menu_compass"
                                 app:tint="@color/text_yellow" />
                         </RelativeLayout>
@@ -474,10 +481,10 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_margin="6dp"
-                        app:cardBackgroundColor="@android:color/white"
+                        app:cardBackgroundColor="?attr/colorSurfaceContainer"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="0dp"
-                        app:strokeColor="@color/card_border"
+
                         app:strokeWidth="1dp">
 
                         <RelativeLayout
@@ -522,7 +529,6 @@
                                 android:layout_marginTop="12dp"
                                 android:fontFamily="@font/jakarta_sans_bold"
                                 android:text="Class Tests"
-                                android:textColor="@color/title_dark"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
 
@@ -554,7 +560,7 @@
                                 android:layout_height="16dp"
                                 android:layout_alignTop="@id/tvDesc3"
                                 android:layout_alignParentEnd="true"
-                                android:layout_marginTop="52dp"
+                                android:layout_marginTop="48dp"
                                 android:src="@android:drawable/ic_menu_send"
                                 app:tint="@color/text_orange" />
                         </RelativeLayout>
@@ -567,10 +573,10 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_margin="6dp"
-                        app:cardBackgroundColor="@android:color/white"
+                        app:cardBackgroundColor="?attr/colorSurfaceContainer"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="0dp"
-                        app:strokeColor="@color/card_border"
+
                         app:strokeWidth="1dp">
 
                         <RelativeLayout
@@ -615,7 +621,7 @@
                                 android:layout_marginTop="12dp"
                                 android:fontFamily="@font/jakarta_sans_bold"
                                 android:text="Lecture Notes"
-                                android:textColor="@color/title_dark"
+
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
 
@@ -647,7 +653,7 @@
                                 android:layout_height="16dp"
                                 android:layout_alignTop="@id/tvDesc4"
                                 android:layout_alignParentEnd="true"
-                                android:layout_marginTop="52dp"
+                                android:layout_marginTop="48dp"
                                 android:src="@android:drawable/ic_menu_gallery"
                                 app:tint="@color/text_teal" />
                         </RelativeLayout>
