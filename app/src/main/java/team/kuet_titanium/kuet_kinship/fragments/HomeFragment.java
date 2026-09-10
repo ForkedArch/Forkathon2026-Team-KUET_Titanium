@@ -31,6 +31,7 @@ import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
 import team.kuet_titanium.kuet_kinship.ExamAndStuffActivity;
+import team.kuet_titanium.kuet_kinship.GuidesListActivity;
 import team.kuet_titanium.kuet_kinship.LectureNotesActivity;
 import team.kuet_titanium.kuet_kinship.R;
 import team.kuet_titanium.kuet_kinship.RoomsAndLabsActivity;
@@ -95,6 +96,7 @@ public class HomeFragment extends Fragment {
         MaterialCardView cardNotes = view.findViewById(R.id.card_notes);
         MaterialCardView cardRl = view.findViewById(R.id.card_rl);
         MaterialCardView cardExams = view.findViewById(R.id.card_exams);
+        MaterialCardView cardGA = view.findViewById(R.id.card_ga);
 
         cardNotes.setOnClickListener(v -> {
             Intent intent = new Intent(requireContext(), LectureNotesActivity.class);
@@ -106,6 +108,10 @@ public class HomeFragment extends Fragment {
         });
         cardExams.setOnClickListener(v -> {
             Intent intent = new Intent(requireContext(), ExamAndStuffActivity.class);
+            startActivity(intent);
+        });
+        cardGA.setOnClickListener(v -> {
+            Intent intent = new Intent(requireContext(), GuidesListActivity.class);
             startActivity(intent);
         });
     }

@@ -287,7 +287,7 @@
                     android:columnCount="2"
                     android:rowCount="2">
 
-                    <!-- CARD 1: Class Locator -->
+                    <!-- CARD 1: Guided Assistance -->
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -297,7 +297,7 @@
                         app:cardBackgroundColor="?attr/colorSurfaceContainer"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="0dp"
-
+                        android:id="@+id/card_ga"
                         app:strokeWidth="1dp">
 
                         <RelativeLayout

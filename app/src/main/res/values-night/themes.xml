@@ -4,6 +4,9 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="colorSurfaceContainer">@color/title_dark</item>
+        <!-- Set the default font family globally -->
+        <item name="fontFamily">@font/app_font</item>
+        <item name="android:fontFamily">@font/app_font</item>
     </style>
     <style name="CircularImageView">
         <item name="cornerSize">50%</item>

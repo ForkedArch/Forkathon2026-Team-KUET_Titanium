@@ -43,6 +43,7 @@
                     android:paddingEnd="14dp"
                     android:text="‹  Rooms &amp; Labs"
                     android:textColor="@color/navy"
+                    android:fontFamily="@font/jakarta_sans_medium"
                     android:id="@+id/rl_back"
                     android:textSize="13sp"
                     android:textStyle="bold" />

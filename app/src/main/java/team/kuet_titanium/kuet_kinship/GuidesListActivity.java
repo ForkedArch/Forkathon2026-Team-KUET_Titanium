@@ -2,7 +2,6 @@ package team.kuet_titanium.kuet_kinship;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentSender;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -15,7 +14,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
-import androidx.activity.FullyDrawnReporter;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,18 +24,10 @@ import androidx.core.app.SharedElementCallback;
 import androidx.core.app.TaskStackBuilder;
 import androidx.core.graphics.Insets;
 import androidx.core.os.LocaleListCompat;
-import androidx.core.view.MenuProvider;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelStore;
-import androidx.lifecycle.viewmodel.CreationExtras;
-import androidx.loader.app.LoaderManager;
-import androidx.navigationevent.NavigationEventDispatcher;
+
+import com.google.android.material.card.MaterialCardView;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -45,30 +35,15 @@ import org.jspecify.annotations.Nullable;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-public class ExamAndStuffActivity extends AppCompatActivity {
+import team.kuet_titanium.kuet_kinship.guides.MealOffDummyActivity;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_exam_and_stuff);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+public class GuidesListActivity extends AppCompatActivity {
 
-        TextView rl_back = findViewById(R.id.rl_back);
-        rl_back.setOnClickListener(view -> getOnBackPressedDispatcher().onBackPressed());
-    }
-
-    //Do not touch these code unless necessary
-
-    public ExamAndStuffActivity() {
+    public GuidesListActivity() {
         super();
     }
 
-    public ExamAndStuffActivity(int contentLayoutId) {
+    public GuidesListActivity(int contentLayoutId) {
         super(contentLayoutId);
     }
 
@@ -375,128 +350,26 @@ public class ExamAndStuffActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onAttachFragment(@androidx.annotation.NonNull Fragment fragment) {
-        super.onAttachFragment(fragment);
-    }
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_guides_list);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
 
-    @androidx.annotation.NonNull
-    @Override
-    public FragmentManager getSupportFragmentManager() {
-        return super.getSupportFragmentManager();
-    }
+        TextView rl_back = findViewById(R.id.rl_back);
+        rl_back.setOnClickListener(view -> getOnBackPressedDispatcher().onBackPressed());
 
-    @androidx.annotation.NonNull
-    @Override
-    public LoaderManager getSupportLoaderManager() {
-        return super.getSupportLoaderManager();
-    }
+        MaterialCardView mc1 = findViewById(R.id.card_dummy_guide_1);
+        mc1.setOnClickListener(view -> {
+            Intent i = new Intent(GuidesListActivity.this, MealOffDummyActivity.class);
+            startActivity(i);
+        });
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @androidx.annotation.NonNull String[] permissions, @androidx.annotation.NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-    }
+        //Do not touch these codes:
 
-    @Override
-    public void startActivityFromFragment(@androidx.annotation.NonNull Fragment fragment, @androidx.annotation.NonNull Intent intent, int requestCode) {
-        super.startActivityFromFragment(fragment, intent, requestCode);
-    }
-
-    @Override
-    public void startActivityFromFragment(@androidx.annotation.NonNull Fragment fragment, @androidx.annotation.NonNull Intent intent, int requestCode, @androidx.annotation.Nullable Bundle options) {
-        super.startActivityFromFragment(fragment, intent, requestCode, options);
-    }
-
-    @Override
-    public void startIntentSenderFromFragment(@androidx.annotation.NonNull Fragment fragment, @androidx.annotation.NonNull IntentSender intent, int requestCode, @androidx.annotation.Nullable Intent fillInIntent, int flagsMask, int flagsValues, int extraFlags, @androidx.annotation.Nullable Bundle options) throws IntentSender.SendIntentException {
-        super.startIntentSenderFromFragment(fragment, intent, requestCode, fillInIntent, flagsMask, flagsValues, extraFlags, options);
-    }
-
-    @androidx.annotation.NonNull
-    @Override
-    public FullyDrawnReporter getFullyDrawnReporter() {
-        return super.getFullyDrawnReporter();
-    }
-
-    @androidx.annotation.Nullable
-    @Override
-    public Object getLastCustomNonConfigurationInstance() {
-        return super.getLastCustomNonConfigurationInstance();
-    }
-
-    @androidx.annotation.NonNull
-    @Override
-    public Lifecycle getLifecycle() {
-        return super.getLifecycle();
-    }
-
-    @androidx.annotation.NonNull
-    @Override
-    public ViewModelStore getViewModelStore() {
-        return super.getViewModelStore();
-    }
-
-    @androidx.annotation.NonNull
-    @Override
-    public ViewModelProvider.Factory getDefaultViewModelProviderFactory() {
-        return super.getDefaultViewModelProviderFactory();
-    }
-
-    @androidx.annotation.NonNull
-    @Override
-    public CreationExtras getDefaultViewModelCreationExtras() {
-        return super.getDefaultViewModelCreationExtras();
-    }
-
-    @androidx.annotation.NonNull
-    @Override
-    public NavigationEventDispatcher getNavigationEventDispatcher() {
-        return super.getNavigationEventDispatcher();
-    }
-
-    @Override
-    protected void onSaveInstanceState(@androidx.annotation.NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-    }
-
-    @androidx.annotation.Nullable
-    @Override
-    public Object onRetainCustomNonConfigurationInstance() {
-        return super.onRetainCustomNonConfigurationInstance();
-    }
-
-    @Override
-    public void initializeViewTreeOwners() {
-        super.initializeViewTreeOwners();
-    }
-
-    @androidx.annotation.Nullable
-    @Override
-    public Context peekAvailableContext() {
-        return super.peekAvailableContext();
-    }
-
-    @Override
-    public boolean onPreparePanel(int featureId, @androidx.annotation.Nullable View view, @androidx.annotation.NonNull Menu menu) {
-        return super.onPreparePanel(featureId, view, menu);
-    }
-
-    @Override
-    public boolean onCreatePanelMenu(int featureId, @androidx.annotation.NonNull Menu menu) {
-        return super.onCreatePanelMenu(featureId, menu);
-    }
-
-    @Override
-    public void addMenuProvider(@androidx.annotation.NonNull MenuProvider provider) {
-        super.addMenuProvider(provider);
-    }
-
-    @Override
-    public void addMenuProvider(@androidx.annotation.NonNull MenuProvider provider, @androidx.annotation.NonNull LifecycleOwner owner) {
-        super.addMenuProvider(provider, owner);
-    }
-
-    @Override
-    public void addMenuProvider(@androidx.annotation.NonNull MenuProvider provider, @androidx.annotation.NonNull LifecycleOwner owner, @androidx.annotation.NonNull Lifecycle.State state) {
-        super.addMenuProvider(provider, owner, state);
     }
 }
