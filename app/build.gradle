@@ -29,6 +29,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -38,6 +41,8 @@ dependencies {
     implementation 'io.github.muddz:styleabletoast:2.4.0'
     //implementation 'com.github.requery:sqlite-android:3.50.4'
     implementation libs.material
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
     testImplementation libs.junit
     androidTestImplementation libs.espresso.core
     androidTestImplementation libs.ext.junit

@@ -63,4 +63,12 @@
     <color name="page">#F7F8FC</color>
     <color name="warm">#FFF1E4</color>
     <color name="line">#E6EBF3</color>
+
+    <color name="green_deep">#00563F</color>
+    <color name="page_bg">#F8F8FC</color>
+    <color name="red">#C52E35</color>
+    <color name="blue">#466BC7</color>
+    <color name="cream">#FFF0D9</color>
+    <color name="red_soft">#FFD9D9</color>
+    <color name="green_soft">#DDF4EB</color>
 </resources>
