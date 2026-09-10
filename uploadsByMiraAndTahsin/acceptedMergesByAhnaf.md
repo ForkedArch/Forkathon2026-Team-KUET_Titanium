@@ -12,3 +12,9 @@
 
 10th Sep 5:22 PM :: Checked and verified bug test statements (private session)
 - **Contribution : Mira and Tahsin**
+
+10th Sep 10:37 PM :: Checked and verified bug report from KUET_Kinship_Bug_Report_Course_Year_Filter (4).pdf. Issue opened: Bug ID KUET-KINSHIP-001
+- **Contribution: Mira and Tahsin**
+
+11th Sep 1:06 PM :: Fixed Bug ID KUET-KINSHIP-001 and also fixed some minor UI glitches. Issue closed.
+- **Contribution : Mira and Tahsin**
