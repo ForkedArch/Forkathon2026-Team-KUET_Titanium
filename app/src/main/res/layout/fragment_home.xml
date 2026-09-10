@@ -391,7 +391,7 @@
                         app:cardBackgroundColor="?attr/colorSurfaceContainer"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="0dp"
-
+                        android:id="@+id/card_rl"
                         app:strokeWidth="1dp">
 
                         <RelativeLayout

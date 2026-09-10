@@ -32,6 +32,7 @@ import java.io.PrintWriter;
 
 import team.kuet_titanium.kuet_kinship.LectureNotesActivity;
 import team.kuet_titanium.kuet_kinship.R;
+import team.kuet_titanium.kuet_kinship.RoomsAndLabsActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -91,9 +92,14 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         MaterialCardView cardNotes = view.findViewById(R.id.card_notes);
+        MaterialCardView cardRl = view.findViewById(R.id.card_rl);
 
         cardNotes.setOnClickListener(v -> {
             Intent intent = new Intent(requireContext(), LectureNotesActivity.class);
+            startActivity(intent);
+        });
+        cardRl.setOnClickListener(v -> {
+            Intent intent = new Intent(requireContext(), RoomsAndLabsActivity.class);
             startActivity(intent);
         });
     }

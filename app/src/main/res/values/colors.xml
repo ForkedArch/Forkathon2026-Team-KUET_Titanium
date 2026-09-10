@@ -49,4 +49,18 @@
     <color name="icon_tint_blue">#1E1B4B</color>
     <color name="tag_bg_blue_soft">#E0E7FF</color>
     <color name="text_teal">#0F766E</color>
+
+    <color name="navy">#17324D</color>
+    <color name="ink">#243B53</color>
+    <color name="muted">#73849A</color>
+    <color name="green">#006B52</color>
+    <color name="green_dark">#005742</color>
+    <color name="mint">#B8F2DC</color>
+    <color name="mint_light">#DFF9EF</color>
+    <color name="lavender">#EEF2FF</color>
+    <color name="lavender_2">#E7ECFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="page">#F7F8FC</color>
+    <color name="warm">#FFF1E4</color>
+    <color name="line">#E6EBF3</color>
 </resources>

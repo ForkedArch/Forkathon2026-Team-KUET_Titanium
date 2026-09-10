@@ -7,4 +7,561 @@
     android:layout_height="match_parent"
     tools:context=".RoomNavigateActivity">
 
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rootScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingTop="8dp"
+            android:paddingBottom="18dp">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@drawable/chip_blue"
+                    android:gravity="center_vertical"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:text="‹  Rooms &amp; Labs"
+                    android:textColor="@color/navy"
+                    android:id="@+id/rl_back"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/campusChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@drawable/chip_blue"
+                    android:gravity="center"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="◉  North  §"
+                    android:textColor="@color/navy"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/shareButton"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/white_circle"
+                    android:gravity="center"
+                    android:text="↗"
+                    android:textColor="@color/navy"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Navigate Room •"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/jakarta_sans_bold"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Indoor step-by-step wayfinding • CSE Building"
+                android:textColor="@color/muted"
+                android:textSize="13sp" />
+
+            <!-- Destination card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:cardBackgroundColor="?attr/colorSurfaceContainer"
+                app:cardElevation="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="92dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/room_badge"
+                        android:gravity="center"
+                        android:text="▣ CSE 301"
+                        android:textColor="@color/green"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Prof. Dr. K. M. Azha..."
+                            android:fontFamily="@font/jakarta_sans_bold"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Faculty / Chamber • Dept of CSE"
+                            android:textColor="@color/muted"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/white_circle"
+                        android:gravity="center"
+                        android:text="●"
+                        android:textColor="@color/green"
+                        android:textSize="26sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/chip_blue"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="▰  CSE Academic Bldg, 2nd Fl, West"
+                    android:textColor="@color/muted"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/chip_green"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="●  Available • Until 7:00 PM"
+                    android:textColor="@color/green"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardBackgroundColor="?attr/colorSurfaceContainer"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="12dp"
+                        android:gravity="center_vertical"
+                        android:background="@color/icon_bg_tan"
+                        >
+
+                        <TextView
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/white_circle"
+                            android:gravity="center"
+                            android:text="N
+• E"
+                            android:textColor="@color/green"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:background="@drawable/chip_blue"
+                                android:gravity="center"
+                                android:paddingStart="9dp"
+                                android:paddingEnd="9dp"
+                                android:text="◎  Head North-East"
+                                android:textColor="@color/green"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="45°
+NE"
+                                android:textColor="#9B7A25"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="4 min walk • CSE Academic..."
+                                android:textColor="@color/muted"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="58dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="351"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:textColor="@color/green"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="m"
+                                android:textColor="@color/green"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Remaining"
+                                android:textColor="@color/green"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+            <!-- Floor header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CAMPUS FLOOR LEVEL"
+                    android:textColor="#9B7A25"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step 2 of 4"
+                    android:textColor="#9B7A25"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <TextView android:id="@+id/floorGround" android:layout_width="78dp" android:layout_height="36dp" android:layout_marginEnd="7dp" android:background="@drawable/chip_blue" android:gravity="center" android:text="Ground"  android:textSize="11sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/floor1" android:layout_width="78dp" android:layout_height="36dp" android:layout_marginEnd="7dp" android:background="@drawable/chip_blue" android:gravity="center" android:text="1st Floor"  android:textSize="11sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/floor2" android:layout_width="88dp" android:layout_height="36dp" android:layout_marginEnd="7dp" android:background="@drawable/chip_target" android:gravity="center" android:text="☆ 2nd Floor (Target)" android:textColor="@color/text_white" android:textSize="10sp" android:textStyle="bold"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Blueprint -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/soft_card"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="▦  Floor Blueprint"
+                        android:textColor="@color/ink"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:background="@drawable/chip_blue"
+                        android:gravity="center"
+                        android:paddingStart="9dp"
+                        android:paddingEnd="9dp"
+                        android:text="⚑  45m Remaining"
+                        android:textColor="@color/muted"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical">
+
+                    <TextView android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:background="@drawable/chip_blue" android:gravity="center" android:text="▣  Stairs A" android:textColor="@color/muted" android:textSize="9sp" android:textStyle="bold"/>
+                    <Space android:layout_width="5dp" android:layout_height="1dp"/>
+                    <TextView android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:background="@drawable/chip_blue" android:gravity="center" android:text="▤  Elevator 1 &amp; 2" android:textColor="@color/muted" android:textSize="9sp" android:textStyle="bold"/>
+                    <Space android:layout_width="5dp" android:layout_height="1dp"/>
+                    <TextView android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:background="@drawable/chip_blue" android:gravity="center" android:text="▥  Washrooms" android:textColor="@color/muted" android:textSize="9sp" android:textStyle="bold"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dummy_floor_blueprint"/>
+            </LinearLayout>
+
+            <!-- Guidance heading -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Turn-by-turn Guidance"
+                    android:textColor="#9B7A25"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="↳ 4 steps to destination"
+                    android:textColor="#9B7A25"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Step 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:background="@drawable/soft_card"
+                android:gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:padding="12dp">
+
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/chip_green" android:gravity="center" android:text="✓" android:textColor="@color/green" android:textSize="20sp" android:textStyle="bold"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter Academic Building" android:textColor="@color/ink" android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Entrance via Ground Floor South Atrium." android:textColor="@color/muted" android:textSize="10sp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Done" android:textColor="#9B7A25" android:textSize="10sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Step 2 current -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/step_current"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/chip_target" android:gravity="center" android:text="↑" android:textColor="@color/surface" android:textSize="22sp" android:textStyle="bold"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="22dp" android:text="CURRENT STEP" android:textColor="#9B7A25" android:textSize="9sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Take Staircase A to 3rd Floor" android:textColor="@color/green" android:textSize="15sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="After walking, Main Floor is on your right side." android:textColor="@color/muted" android:textSize="10sp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Now" android:textColor="#9B7A25" android:textSize="10sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Step 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/soft_card"
+                android:gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:padding="12dp">
+
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/chip_blue" android:gravity="center" android:text="↱" android:textColor="@color/green" android:textSize="21sp" android:textStyle="bold"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Turn Right at Notice Board" android:textColor="@color/green" android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pass the CSE Dept Notice Board into the West corridor." android:textColor="@color/muted" android:textSize="10sp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Next" android:textColor="#9B7A25" android:textSize="10sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Step 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/soft_card"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/chip_blue" android:gravity="center" android:text="▱" android:textColor="@color/green" android:textSize="19sp" android:textStyle="bold"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arrive at Room CSE 301" android:textColor="@color/green" android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Room is on your right side, opposite the faculty lounge." android:textColor="@color/muted" android:textSize="10sp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45m" android:textColor="#9B7A25" android:textSize="10sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Tip -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/tip_card"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:gravity="center" android:text="♧" android:textColor="#9B7A25" android:textSize="25sp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Senior Etiquette Tip" android:textColor="#9B7A25" android:textSize="13sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Sit&#39;s mapaggan is beside the biometric door sensor.&#10;Please knock gently and wait for reply before&#10;opening during open consultation time." android:textColor="@color/muted" android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Bottom actions -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/arButton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_secondary"
+                    android:gravity="center"
+                    android:text="⌾  AR Camera Nav"
+                    android:textColor="@color/ink"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Space android:layout_width="8dp" android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/recalculateButton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_secondary"
+                    android:gravity="center"
+                    android:text="↻  Recalculate"
+                    android:textColor="@color/ink"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/arrivedButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_primary"
+                android:gravity="center"
+                android:text="♟  I Have Arrived at CSE 301"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/surface"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
