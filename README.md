@@ -2,7 +2,6 @@
 
 # Forkathon 2026: **KUET Kinship** by **KUET_Titanium**
 
-<img src="uploadsbyMiraAndTahsin/banner.png">
 
 <img src="screenshots/1.png">
 
@@ -16,6 +15,7 @@
 | Mobasshira Sadia Sakal (Mira) | 52507041 | CSE        | @mira1423 |
 | Tahsin Hossain Chowdhury | 52507094 | CSE        | @tahsinlog2k25 |
 
+<img src="uploadsbyMiraAndTahsin/banner.jng">
 ---
 
 ## ❔ Problem
