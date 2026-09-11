@@ -27,6 +27,11 @@ Links:
 
 2) <a href="uploadsByMiraAndTahsin/kinship_finalized_documentation.pdf" target="_blank">View Documentation</a>
 
+3) <a href="https://drive.google.com/file/d/164VgcvrFBCOX-Kg2GFRGsJoMFaEy6x4a/view?usp=drive_link" target="_blank"> View Demo
+</a>
+
+4) <a href="https://drive.google.com/file/d/1VlXJYDk1Bl7QTw3vAL1NI__5wojA0TWP/view?usp=drive_link" target="_blank"> View Presentation
+</a>
 ---
 
 ## ❔ Problem
