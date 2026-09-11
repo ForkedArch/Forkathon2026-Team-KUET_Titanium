@@ -294,13 +294,13 @@
                             android:textStyle="bold" />
                     </RelativeLayout>
 
-                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                    <androidx.core.widget.ContentLoadingProgressBar
                         style="?android:attr/progressBarStyleHorizontal"
                         android:layout_width="match_parent"
                         android:layout_height="6dp"
                         android:layout_marginTop="6dp"
                         android:progress="80"
-                        app:trackCornerRadius="8dp"
+
                         android:progressTint="@color/green" />
 
                     <!-- Badges Horizontal Tags -->
