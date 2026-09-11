@@ -20,9 +20,9 @@
 Links:
 
 
-1) <a href="build/kuet_kinship_ver_1.0.3-stable.apk" download>
-  <img src="https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android" alt="Download APK">
-</a>
+1) <a href="https://github.com/ForkedArch/Forkathon2026-Team-KUET_Titanium/blob/main/build/kuet_kinship_ver_1.0.3-stable.apk">
+  Download APK
+</a> 
 
 
 2) <a href="uploadsByMiraAndTahsin/kinship_finalized_documentation.pdf" target="_blank">View Documentation</a>
