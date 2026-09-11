@@ -25,20 +25,20 @@
         android:layout_weight="1"
         android:orientation="vertical">
         <TextView
-            android:layout_width="140dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="1"
             android:text="Robotics &amp; Automation"
            android:fontFamily="@font/jakarta_sans_bold"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="150dp"
             android:layout_height="17dp"
             android:text="▣ Mech 205  •  ◷ Ends 01:00 PM"
             android:textColor="@color/muted"
-            android:textSize="8sp"/>
+            android:textSize="10sp"/>
     </LinearLayout>
 
     <TextView

@@ -12,7 +12,6 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        
         >
 
         <LinearLayout
@@ -130,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardBackgroundColor="#004D40"
-                app:cardCornerRadius="16dp"
+                app:cardCornerRadius="24dp"
                 android:id="@+id/card_dummy_guide_1"
                 app:cardElevation="8dp">
 
@@ -176,7 +175,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:lineSpacingExtra="2dp"
-                        android:text="Navigate the 8:00 PM cutoff window and resolve meal cancellation locks smoothly."
+                        android:text="Save your money while you're dining elsewhere and resolve meal cancellation locks smoothly."
                         android:textColor="#CBD5E1"
                         android:textSize="12sp" />
 
@@ -221,8 +220,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                  
-                app:cardCornerRadius="14dp"
+                app:cardCornerRadius="24dp"
                   app:cardElevation="8dp">
 
                 <LinearLayout
@@ -299,7 +297,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                   
-                app:cardCornerRadius="14dp"
+                app:cardCornerRadius="24dp"
                   app:cardElevation="8dp">
 
                 <LinearLayout
@@ -376,7 +374,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                   
-                app:cardCornerRadius="14dp"
+                app:cardCornerRadius="24dp"
                   app:cardElevation="8dp">
 
                 <LinearLayout
@@ -453,7 +451,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                   
-                app:cardCornerRadius="14dp"
+                app:cardCornerRadius="24dp"
                   app:cardElevation="8dp">
 
                 <LinearLayout
@@ -530,7 +528,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                   
-                app:cardCornerRadius="14dp"
+                app:cardCornerRadius="24dp"
                   app:cardElevation="8dp">
 
                 <LinearLayout
@@ -607,7 +605,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="#E0EBFF"
+                app:cardBackgroundColor="#D2FFE9"
                 app:cardCornerRadius="16dp"
                   app:cardElevation="8dp">
 
@@ -627,7 +625,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Need another guide?"
-                             
+                             android:textColor="@color/text_mint_green"
                             android:textSize="14sp"
                             android:textStyle="bold" />
 

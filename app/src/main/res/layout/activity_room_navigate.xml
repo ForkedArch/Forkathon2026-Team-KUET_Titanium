@@ -159,14 +159,21 @@
                             android:textSize="11sp" />
                     </LinearLayout>
 
-                    <TextView
+                    <FrameLayout
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/white_circle"
-                        android:gravity="center"
-                        android:text="●"
-                        android:textColor="@color/green"
-                        android:textSize="26sp" />
+                        android:background="@drawable/card_cream">
+                        <TextView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="12dp"
+                            android:text="●"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/green"
+                            android:textSize="26sp" />
+                    </FrameLayout>
+
+
                 </LinearLayout>
 
                 <TextView
@@ -329,9 +336,39 @@ NE"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical">
 
-                    <TextView android:id="@+id/floorGround" android:layout_width="78dp" android:layout_height="36dp" android:layout_marginEnd="7dp" android:background="@drawable/chip_blue" android:gravity="center" android:text="Ground"  android:textSize="11sp" android:textStyle="bold"/>
-                    <TextView android:id="@+id/floor1" android:layout_width="78dp" android:layout_height="36dp" android:layout_marginEnd="7dp" android:background="@drawable/chip_blue" android:gravity="center" android:text="1st Floor"  android:textSize="11sp" android:textStyle="bold"/>
-                    <TextView android:id="@+id/floor2" android:layout_width="88dp" android:layout_height="36dp" android:layout_marginEnd="7dp" android:background="@drawable/chip_target" android:gravity="center" android:text="☆ 2nd Floor (Target)" android:textColor="@color/text_white" android:textSize="10sp" android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/floorGround"
+                        android:layout_width="78dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="7dp"
+                        android:background="@drawable/chip_blue"
+                        android:gravity="center"
+                        android:text="Ground"
+                        android:textSize="12sp"
+                        android:textColor="@color/green_deep"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/floor1"
+                        android:layout_width="78dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="7dp"
+                        android:background="@drawable/chip_blue"
+                        android:gravity="center"
+                        android:text="1st Floor"
+                        android:textSize="12sp"
+                        android:textColor="@color/green_deep"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/floor2"
+                        android:layout_width="88dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="7dp"
+                        android:background="@drawable/chip_target"
+                        android:gravity="center"
+                        android:text="☆ 2nd Floor (Target)"
+                        android:textColor="@color/text_white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"/>
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -427,10 +464,34 @@ NE"
                 android:layout_marginLeft="16dp"
                 android:padding="12dp">
 
-                <TextView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/chip_green" android:gravity="center" android:text="✓" android:textColor="@color/green" android:textSize="20sp" android:textStyle="bold"/>
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter Academic Building" android:textColor="@color/ink" android:textSize="14sp" android:textStyle="bold"/>
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Entrance via Ground Floor South Atrium." android:textColor="@color/muted" android:textSize="10sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/chip_green"
+                    android:gravity="center"
+                    android:text="✓"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Academic Building"
+                        android:textColor="@color/ink"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Entrance via Ground Floor South"
+                        android:textColor="@color/muted"
+                        android:textSize="10sp"/>
                 </LinearLayout>
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Done" android:textColor="#9B7A25" android:textSize="10sp" android:textStyle="bold"/>
             </LinearLayout>
@@ -446,13 +507,51 @@ NE"
                 android:gravity="center_vertical"
                 android:padding="12dp">
 
-                <TextView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/chip_target" android:gravity="center" android:text="↑" android:textColor="@color/surface" android:textSize="22sp" android:textStyle="bold"/>
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="22dp" android:text="CURRENT STEP" android:textColor="#9B7A25" android:textSize="9sp" android:textStyle="bold"/>
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Take Staircase A to 3rd Floor" android:textColor="@color/green" android:textSize="15sp" android:textStyle="bold"/>
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="After walking, Main Floor is on your right side." android:textColor="@color/muted" android:textSize="10sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/chip_target"
+                    android:gravity="center"
+                    android:text="↑"
+
+                    android:textColor="@color/surface"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:text="CURRENT STEP"
+                        android:textColor="#9B7A25"
+                        android:textSize="9sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Take Staircase A to 3rd Floor"
+                        android:textColor="@color/green"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="After walking, Main Floor is on your right side." android:textColor="@color/muted" android:textSize="10sp"/>
                 </LinearLayout>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Now" android:textColor="#9B7A25" android:textSize="10sp" android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Now"
+                    android:textColor="#9B7A25"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <!-- Step 3 -->
@@ -466,12 +565,40 @@ NE"
                 android:layout_marginLeft="16dp"
                 android:padding="12dp">
 
-                <TextView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/chip_blue" android:gravity="center" android:text="↱" android:textColor="@color/green" android:textSize="21sp" android:textStyle="bold"/>
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Turn Right at Notice Board" android:textColor="@color/green" android:textSize="14sp" android:textStyle="bold"/>
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pass the CSE Dept Notice Board into the West corridor." android:textColor="@color/muted" android:textSize="10sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/chip_blue"
+                    android:gravity="center"
+                    android:text="↱"
+                    android:textColor="@color/green"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Turn Right at Notice Board"
+                        android:textColor="@color/green"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pass the CSE Dept Notice Board into the West corridor." android:textColor="@color/muted" android:textSize="10sp"/>
                 </LinearLayout>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Next" android:textColor="#9B7A25" android:textSize="10sp" android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textColor="#9B7A25"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <!-- Step 4 -->
@@ -485,12 +612,40 @@ NE"
                 android:gravity="center_vertical"
                 android:padding="12dp">
 
-                <TextView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/chip_blue" android:gravity="center" android:text="▱" android:textColor="@color/green" android:textSize="19sp" android:textStyle="bold"/>
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arrive at Room CSE 301" android:textColor="@color/green" android:textSize="14sp" android:textStyle="bold"/>
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Room is on your right side, opposite the faculty lounge." android:textColor="@color/muted" android:textSize="10sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/chip_blue"
+                    android:gravity="center"
+                    android:text="▱"
+                    android:textColor="@color/green"
+                    android:textSize="19sp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arrive at Room CSE 301"
+                        android:textColor="@color/green"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Room is on your right side, opposite the faculty lounge." android:textColor="@color/muted" android:textSize="10sp"/>
                 </LinearLayout>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45m" android:textColor="#9B7A25" android:textSize="10sp" android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3-4m"
+                    android:textColor="#9B7A25"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <!-- Tip -->
@@ -504,10 +659,33 @@ NE"
                 android:gravity="center_vertical"
                 android:padding="12dp">
 
-                <TextView android:layout_width="40dp" android:layout_height="40dp" android:gravity="center" android:text="♧" android:textColor="#9B7A25" android:textSize="25sp"/>
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:orientation="vertical">
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Senior Etiquette Tip" android:textColor="#9B7A25" android:textSize="13sp" android:textStyle="bold"/>
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Sit&#39;s mapaggan is beside the biometric door sensor.&#10;Please knock gently and wait for reply before&#10;opening during open consultation time." android:textColor="@color/muted" android:textSize="10sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="♧"
+                    android:textColor="#9B7A25"
+                    android:textSize="25sp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Seniors' Etiquette Tip"
+                        android:textColor="#9B7A25"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Sir&#39;s nameplate is beside the biometric door sensor.&#10;Please knock gently and wait for reply before&#10;opening during open consultation time."
+                        android:textColor="@color/muted"
+                        android:textSize="10sp"/>
                 </LinearLayout>
             </LinearLayout>
 

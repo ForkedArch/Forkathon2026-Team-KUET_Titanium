@@ -23,19 +23,19 @@
         android:orientation="vertical">
         <TextView
             android:layout_width="140dp"
-            android:layout_height="20dp"
+            android:layout_height="24dp"
             android:ellipsize="end"
             android:maxLines="1"
             android:text="Machine Learning"
             android:fontFamily="@font/jakarta_sans_bold"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="150dp"
             android:layout_height="17dp"
             android:text="▣ NAB 402  •  ◷ Ends 12:30 PM"
             android:textColor="@color/muted"
-            android:textSize="8sp"/>
+            android:textSize="10sp"/>
     </LinearLayout>
 
     <TextView

@@ -66,6 +66,7 @@
                     android:background="@drawable/bg_search_input"
                     android:drawableStart="@android:drawable/ic_menu_search"
                     android:drawablePadding="10dp"
+                    android:textColor="@color/green_dark"
                     android:hint="Search professor, room, lab, or bu"
                     android:paddingStart="12dp"
                     android:paddingEnd="12dp"

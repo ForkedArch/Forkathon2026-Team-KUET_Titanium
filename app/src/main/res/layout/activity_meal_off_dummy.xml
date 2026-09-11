@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardBackgroundColor="#E9EEFFF1"
-                app:cardCornerRadius="14dp"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp">
 
                 <RelativeLayout
@@ -214,7 +214,7 @@
                             android:background="@drawable/bg_num_selected"
                             android:gravity="center"
                             android:text="1"
-                            android:textColor="#FFFFFF"
+                            android:textColor="#E9EEFFF1"
                             android:textStyle="bold" />
 
                         <TextView
@@ -276,7 +276,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardBackgroundColor="#FBBF24"
-                app:cardCornerRadius="14dp"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp">
 
                 <LinearLayout
@@ -309,8 +309,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#E9EEFFF1"
+                app:cardCornerRadius="24dp"
                 app:cardElevation="0dp">
 
                 <LinearLayout
@@ -330,7 +330,7 @@
                             android:background="@drawable/bg_circle_teal"
                             android:gravity="center"
                             android:text="1"
-                            android:textColor="#FFFFFF"
+                            android:textColor="#E9EEFFF1"
                             android:textStyle="bold" />
 
                         <LinearLayout
@@ -344,8 +344,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Go to the website"
-                                
                                 android:textSize="15sp"
+                                android:textColor="@color/text_green"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -380,7 +380,7 @@
                         android:backgroundTint="#004D40"
                         android:text="✓ I'm on the Website"
                         android:textAllCaps="false"
-                        android:textColor="#FFFFFF"
+                        android:textColor="#E9EEFFF1"
                         app:cornerRadius="10dp" />
 
                 </LinearLayout>
@@ -392,14 +392,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/tint_amber"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="12dp">
+                    android:padding="16dp">
 
                     <TextView
                         android:id="@+id/circle2"
@@ -422,7 +422,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Login using credentials"
-                            
+                            android:textColor="@color/text_green"
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
@@ -449,14 +449,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/tint_amber"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="12dp">
+                    android:padding="16dp">
 
                     <TextView
                         android:id="@+id/circle3"
@@ -479,7 +479,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Go to Meal On/Off &amp; tap SHOW"
-                            
+                            android:textColor="@color/text_green"
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
@@ -506,14 +506,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#FEF3C7"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="12dp">
+                    android:padding="16dp">
 
                     <TextView
                         android:id="@+id/circle4"
@@ -536,7 +536,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Select date(s) to turn off"
-                            
+                            android:textColor="@color/text_green"
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
@@ -563,14 +563,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/tint_amber"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="12dp">
+                    android:padding="16dp">
 
                     <TextView
                         android:id="@+id/circle5"
@@ -593,7 +593,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Select OFF"
-                            
+                            android:textColor="@color/text_green"
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
@@ -620,14 +620,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/tint_amber"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="12dp">
+                    android:padding="16dp">
 
                     <TextView
                         android:id="@+id/circle6"
@@ -650,7 +650,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Select Update &amp; verify"
-                            
+                            android:textColor="@color/text_green"
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
@@ -677,8 +677,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                app:cardBackgroundColor="#EEF2FF"
-                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#D9E9FF"
+                app:cardCornerRadius="24dp"
                 app:cardElevation="0dp">
 
                 <LinearLayout
@@ -707,7 +707,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Step 1 Active"
-                                
+                                android:textColor="@color/text_green"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -717,7 +717,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:background="@drawable/bg_tag_light_blue"
+                            android:background="@drawable/bg_warning_red"
                             android:paddingHorizontal="10dp"
                             android:paddingVertical="4dp"
                             android:text="Reset Steps"
@@ -751,7 +751,7 @@
                             android:backgroundTint="#004D40"
                             android:text="Next Step ➔"
                             android:textAllCaps="false"
-                            android:textColor="#FFFFFF"
+                            android:textColor="#E9EEFFF1"
                             app:cornerRadius="10dp" />
                     </LinearLayout>
 
@@ -764,8 +764,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
                 android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#E9EEFFF1"
+                app:cardCornerRadius="24dp"
                 app:cardElevation="0dp">
 
                 <RelativeLayout
