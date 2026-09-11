@@ -289,4 +289,5 @@ public class RoomsAndLabsActivity extends AppCompatActivity {
     public void setExitSharedElementCallback(@androidx.annotation.Nullable SharedElementCallback listener) {
         super.setExitSharedElementCallback(listener);
     }
+
 }
