@@ -172,21 +172,20 @@ asynchronous work.
 
 ## 🏗️ Architecture
 
-Add your architecture diagram here.
-Demo diagram added down below
+App's architecture is provided below:
 
 ```text
 User
   │
   ▼
-Frontend
+Frontend (Android Native UI with Java + XML using Material Design 3 Expressive)
   │
   ▼
-Backend / API
+Backend / API (RESTful Services / Realtime Sockets)
   │
-  ├── Database
+  ├── Database (Planned: Room / SQLite Local Storage)
   │
-  └── External Services
+  └── External Services (Planned: Firebase / Auth / Cloud APIs)
 ```
 
 <b>Forkathon: Freshers Hackathon 2026 presented by ForkedArch powered by XtendArena</b>
