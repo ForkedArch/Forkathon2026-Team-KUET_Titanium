@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- res/drawable/bg_floating_navbar.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- This gives it your original light green color -->
+    <solid android:color="@color/text_light_green" />
+    <!-- This creates the rounded pill shape -->
+    <corners android:radius="100dp" />
+</shape>

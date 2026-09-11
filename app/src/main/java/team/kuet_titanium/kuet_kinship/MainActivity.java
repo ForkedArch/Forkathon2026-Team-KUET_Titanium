@@ -23,9 +23,9 @@ import org.jspecify.annotations.Nullable;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-import team.kuet_titanium.kuet_kinship.fragments.BlankFragment;
+import team.kuet_titanium.kuet_kinship.fragments.FeedFragment;
 import team.kuet_titanium.kuet_kinship.fragments.HomeFragment;
-import team.kuet_titanium.kuet_kinship.fragments.UpdatesFragment;
+import team.kuet_titanium.kuet_kinship.fragments.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
             if (itemId == R.id.nav_home) {
                 selectedFragment = new HomeFragment();
             } else if (itemId == R.id.nav_search) {
-                selectedFragment = new BlankFragment();
+                selectedFragment = new FeedFragment();
             } else if (itemId == R.id.nav_profile) {
-                selectedFragment = new UpdatesFragment();
+                selectedFragment = new ProfileFragment();
             }
 
             if (selectedFragment != null) {

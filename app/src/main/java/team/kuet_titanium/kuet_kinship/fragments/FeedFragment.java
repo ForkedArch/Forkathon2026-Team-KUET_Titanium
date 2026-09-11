@@ -26,10 +26,10 @@ import team.kuet_titanium.kuet_kinship.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link UpdatesFragment#newInstance} factory method to
+ * Use the {@link FeedFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class UpdatesFragment extends Fragment {
+public class FeedFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -40,7 +40,7 @@ public class UpdatesFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public UpdatesFragment() {
+    public FeedFragment() {
         // Required empty public constructor
     }
 
@@ -50,11 +50,11 @@ public class UpdatesFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment UpdatesFragment.
+     * @return A new instance of fragment BlankFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static UpdatesFragment newInstance(String param1, String param2) {
-        UpdatesFragment fragment = new UpdatesFragment();
+    public static FeedFragment newInstance(String param1, String param2) {
+        FeedFragment fragment = new FeedFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -75,8 +75,9 @@ public class UpdatesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_updates, container, false);
+        return inflater.inflate(R.layout.fragment_feed, container, false);
     }
+
 
 
     @Override
@@ -145,7 +146,7 @@ public class UpdatesFragment extends Fragment {
         super.setInitialSavedState(state);
     }
 
-    public UpdatesFragment(int contentLayoutId) {
+    public FeedFragment(int contentLayoutId) {
         super(contentLayoutId);
     }
 

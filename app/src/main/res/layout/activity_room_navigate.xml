@@ -249,8 +249,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:text="45°
-NE"
+                                android:text="45° NE"
                                 android:textColor="#9B7A25"
                                 android:textSize="11sp" />
 

@@ -6,6 +6,7 @@
         <item name="colorSurfaceContainer">@color/white</item>
         <!-- Set the default font family globally -->
         <item name="fontFamily">@font/app_font</item>
+
         <item name="android:fontFamily">@font/app_font</item>
     </style>
 
