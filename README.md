@@ -16,6 +16,13 @@
 | Tahsin Hossain Chowdhury | 52507094 | CSE        | @tahsinlog2k25 |
 
 <img src="uploadsByMiraAndTahsin/banner.jpg">
+
+Links:
+<a href="build/kuet_kinship_ver_1.0.3-stable.apk" download>
+  <img src="https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android" alt="Download APK">
+</a>
+<a href="uploadsByMiraAndTahsin/kinship_finalized_documentation.pdf" target="_blank">View Documentation</a>
+
 ---
 
 ## ❔ Problem
@@ -104,7 +111,7 @@ outdated, inaccurate, or completely misleading.
 
 To permanently end this cycle of lost knowledge, **KUET_Titanium** is building an offline-first Android application powered by an embedded SQLite database that acts as a living, evolving memory for the campus community — a system where practical knowledge is captured once, verified by the community, and passed down to every new batch automatically. It serves as a permanent, searchable campus repository that works anytime, anywhere—even without internet connectivity.
 
-<a href="uploadsByMiraAndTahsin/kinship_finalized_documentation.pdf" target="_blank">Click Here to View Documentation</a>
+
 
 
 
