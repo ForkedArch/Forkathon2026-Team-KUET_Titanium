@@ -18,10 +18,14 @@
 <img src="uploadsByMiraAndTahsin/banner.jpg">
 
 Links:
-<a href="build/kuet_kinship_ver_1.0.3-stable.apk" download>
+
+
+1) <a href="build/kuet_kinship_ver_1.0.3-stable.apk" download>
   <img src="https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android" alt="Download APK">
 </a>
-<a href="uploadsByMiraAndTahsin/kinship_finalized_documentation.pdf" target="_blank">View Documentation</a>
+
+
+2) <a href="uploadsByMiraAndTahsin/kinship_finalized_documentation.pdf" target="_blank">View Documentation</a>
 
 ---
 
