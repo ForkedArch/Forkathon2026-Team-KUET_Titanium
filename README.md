@@ -2,6 +2,10 @@
 
 # Forkathon 2026: **KUET Kinship** by **KUET_Titanium**
 
+<img src="uploadsbyMiraAndTahsin/banner.png">
+
+<img src="screenshots/1.png">
+
 > Built for ForkedArch Freshers Hackathon 2026
 
 ## 👥 Team
@@ -96,15 +100,14 @@ outdated, inaccurate, or completely misleading.
 
 ### Overview
 
-<img src="screenshots/1.png">
+<img src="screenshots/2.png">
 
 To permanently end this cycle of lost knowledge, **KUET_Titanium** is building an offline-first Android application powered by an embedded SQLite database that acts as a living, evolving memory for the campus community — a system where practical knowledge is captured once, verified by the community, and passed down to every new batch automatically. It serves as a permanent, searchable campus repository that works anytime, anywhere—even without internet connectivity.
-<img src="screenshots/2.png">
+
+
 <img src="screenshots/3.png">
 <img src="screenshots/5.png">
-<img src="screenshots/6.png">
 <img src="screenshots/7.png">
-<img src="screenshots/8.png">
 <img src="screenshots/9.png">
 
 # Core Objectives
@@ -125,6 +128,8 @@ In short: We are building a trust-aware, self-updating memory for the campus —
 
 
 ### How It Works
+
+<img src="screenshots/6.png">
 
 **How the App Works — General User Flow**
 This section is written for general users, not developers. The goal is to explain the app in a simple 'tap →
@@ -175,6 +180,8 @@ handles the navigation experience for a selected room.
 **6. UI Binding and Asynchronous Components:** The APK includes generated binding classes for Activities
 and Fragments and Kotlin Coroutine-related components, supporting structured UI access and
 asynchronous work.
+
+<img src="screenshots/8.png">
 ---
 
 ## 🏗️ Architecture
