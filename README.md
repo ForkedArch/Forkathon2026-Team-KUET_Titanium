@@ -96,9 +96,16 @@ outdated, inaccurate, or completely misleading.
 
 ### Overview
 
-To permanently end this cycle of lost knowledge, **KUET_Titanium** is building an offline-first Android application powered by an embedded SQLite database that acts as a living, evolving memory for the campus community — a system where practical knowledge is captured once, verified by the community, and passed down to every new batch automatically. It serves as a permanent, searchable campus repository that works anytime, anywhere—even without internet connectivity.
+<img src="screenshots/1.png">
 
-<img src="screenshots/1.png" width="600">
+To permanently end this cycle of lost knowledge, **KUET_Titanium** is building an offline-first Android application powered by an embedded SQLite database that acts as a living, evolving memory for the campus community — a system where practical knowledge is captured once, verified by the community, and passed down to every new batch automatically. It serves as a permanent, searchable campus repository that works anytime, anywhere—even without internet connectivity.
+<img src="screenshots/2.png">
+<img src="screenshots/3.png">
+<img src="screenshots/5.png">
+<img src="screenshots/6.png">
+<img src="screenshots/7.png">
+<img src="screenshots/8.png">
+<img src="screenshots/9.png">
 
 # Core Objectives
 
@@ -187,5 +194,6 @@ Backend / API (RESTful Services / Realtime Sockets)
   │
   └── External Services (Planned: Firebase / Auth / Cloud APIs)
 ```
-
+<img src="screenshots/10.png">
+<img src="screenshots/11.png">
 <b>Forkathon: Freshers Hackathon 2026 presented by ForkedArch powered by XtendArena</b>
