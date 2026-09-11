@@ -104,6 +104,9 @@ outdated, inaccurate, or completely misleading.
 
 To permanently end this cycle of lost knowledge, **KUET_Titanium** is building an offline-first Android application powered by an embedded SQLite database that acts as a living, evolving memory for the campus community — a system where practical knowledge is captured once, verified by the community, and passed down to every new batch automatically. It serves as a permanent, searchable campus repository that works anytime, anywhere—even without internet connectivity.
 
+<a href="uploadsByMiraAndTahsin/kinship_finalized_documentation.pdf" target="_blank">Click Here to View Documentation</a>
+
+
 
 <img src="screenshots/3.png">
 <img src="screenshots/5.png">
